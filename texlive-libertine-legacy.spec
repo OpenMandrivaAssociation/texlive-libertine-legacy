@@ -24,16 +24,8 @@ of the libertine bundle, who were left isolated when that
 bundle switched to OTF-only form on 2012-12-11 (thus only, now,
 supporting XeTeX and LuaTeX users).
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -3574,7 +3566,6 @@ supporting XeTeX and LuaTeX users).
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/ufxlfb.inc
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/ufxlff.inc
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/xlibertineunicode.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -3585,5 +3576,3 @@ supporting XeTeX and LuaTeX users).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts makeindex tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

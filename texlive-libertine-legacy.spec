@@ -1,11 +1,11 @@
-# revision 24921
+# revision 24978
 # category Package
 # catalog-ctan /fonts/libertine-legacy
-# catalog-date 2011-12-22 09:04:18 +0100
+# catalog-date 2011-12-31 01:27:20 +0100
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-libertine-legacy
-Version:	20111222
+Version:	20111231
 Release:	1
 Summary:	Linux Libertine fonts for TeX and pfdTeX users
 Group:		Publishing
@@ -22,7 +22,9 @@ Requires(post):	texlive-kpathsea
 The package provides support for (traditional-)TeX-based users
 of the libertine bundle, who were left isolated when that
 bundle switched to OTF-only form on 2012-12-11 (thus only, now,
-supporting XeTeX and LuaTeX users).
+supporting XeTeX and LuaTeX users). To prevent confusion with
+libertine 'original', there are no OTF fonts in the present
+package.
 
 %post
     %{_sbindir}/texlive.post
@@ -154,30 +156,6 @@ supporting XeTeX and LuaTeX users).
 %{_texmfdistdir}/fonts/enc/dvips/libertine-legacy/xl-t1.enc
 %{_texmfdistdir}/fonts/enc/dvips/libertine-legacy/xl-ts1.enc
 %{_texmfdistdir}/fonts/map/dvips/libertine-legacy/libertine.map
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxbb.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxbbo.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxbk.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxbo.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxbob.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxboi.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxbr.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxbri.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxbro.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxbs.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxbsb.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxbsi.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxlb.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxlbi.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxlbo.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxldr.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxldro.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxli.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxlr.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxlri.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxlro.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxlz.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxlzi.otf
-%{_texmfdistdir}/fonts/opentype/public/libertine-legacy/fxlzo.otf
 %{_texmfdistdir}/fonts/tfm/public/libertine-legacy/fxbb-8r.tfm
 %{_texmfdistdir}/fonts/tfm/public/libertine-legacy/fxbb-t1.tfm
 %{_texmfdistdir}/fonts/tfm/public/libertine-legacy/fxbb-t1fitted.tfm
@@ -3230,7 +3208,6 @@ supporting XeTeX and LuaTeX users).
 %{_texmfdistdir}/fonts/vf/public/libertine-legacy/fxlzo-ts1fitted.vf
 %{_texmfdistdir}/fonts/vf/public/libertine-legacy/fxlzo-ts1o.vf
 %{_texmfdistdir}/fonts/vf/public/libertine-legacy/fxlzo-ts1os.vf
-%{_texmfdistdir}/makeindex/libertine-legacy/index.ist
 %{_texmfdistdir}/tex/latex/libertine-legacy/eu1fxb.fd
 %{_texmfdistdir}/tex/latex/libertine-legacy/eu1fxbf.fd
 %{_texmfdistdir}/tex/latex/libertine-legacy/eu1fxbfo.fd
@@ -3268,13 +3245,9 @@ supporting XeTeX and LuaTeX users).
 %{_texmfdistdir}/tex/latex/libertine-legacy/eu2fxlo.fd
 %{_texmfdistdir}/tex/latex/libertine-legacy/eu2fxlz.fd
 %{_texmfdistdir}/tex/latex/libertine-legacy/fxb.inc
-%{_texmfdistdir}/tex/latex/libertine-legacy/fxbuni_legacy.inc
 %{_texmfdistdir}/tex/latex/libertine-legacy/fxi.inc
-%{_texmfdistdir}/tex/latex/libertine-legacy/fxiuni_legacy.inc
 %{_texmfdistdir}/tex/latex/libertine-legacy/fxk.inc
-%{_texmfdistdir}/tex/latex/libertine-legacy/fxkuni_legacy.inc
 %{_texmfdistdir}/tex/latex/libertine-legacy/fxl.inc
-%{_texmfdistdir}/tex/latex/libertine-legacy/fxluni_legacy.inc
 %{_texmfdistdir}/tex/latex/libertine-legacy/lgrfxl.fd
 %{_texmfdistdir}/tex/latex/libertine-legacy/lgrfxlj.fd
 %{_texmfdistdir}/tex/latex/libertine-legacy/libertine-uni-3.def
@@ -3282,7 +3255,6 @@ supporting XeTeX and LuaTeX users).
 %{_texmfdistdir}/tex/latex/libertine-legacy/libertine-uni-32.def
 %{_texmfdistdir}/tex/latex/libertine-legacy/libertine.sty
 %{_texmfdistdir}/tex/latex/libertine-legacy/libertinecomp.sty
-%{_texmfdistdir}/tex/latex/libertine-legacy/libertinedoku.cls
 %{_texmfdistdir}/tex/latex/libertine-legacy/libertinekey.sty
 %{_texmfdistdir}/tex/latex/libertine-legacy/libertinelist.sty
 %{_texmfdistdir}/tex/latex/libertine-legacy/libertinelogo.sty
@@ -3402,9 +3374,11 @@ supporting XeTeX and LuaTeX users).
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/grimm.tex
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/grimme.tex
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/grimmf.tex
+%doc %{_texmfdistdir}/doc/fonts/libertine-legacy/index.ist
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/lgrfxl.inc
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/lgrfxlj.inc
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/libertine.tex
+%doc %{_texmfdistdir}/doc/fonts/libertine-legacy/libertinedoku.cls
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/libertineglyph.tex
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/libertinekerning_fxb_b_ic.tex
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/libertinekerning_fxb_b_n.tex
@@ -3455,9 +3429,6 @@ supporting XeTeX and LuaTeX users).
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/pdfs/libertinetext.pdf
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/pdfs/libertinetexte.pdf
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/pdfs/libertinetextf.pdf
-%doc %{_texmfdistdir}/doc/fonts/libertine-legacy/samples/libertinetext.pdf
-%doc %{_texmfdistdir}/doc/fonts/libertine-legacy/samples/libertinetexte.pdf
-%doc %{_texmfdistdir}/doc/fonts/libertine-legacy/samples/libertinetextf.pdf
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/t1fxb.inc
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/t1fxbf.inc
 %doc %{_texmfdistdir}/doc/fonts/libertine-legacy/t1fxbfo.inc
@@ -3575,4 +3546,4 @@ supporting XeTeX and LuaTeX users).
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar dvips fonts makeindex tex doc %{buildroot}%{_texmfdistdir}
+cp -fpar dvips fonts tex doc %{buildroot}%{_texmfdistdir}

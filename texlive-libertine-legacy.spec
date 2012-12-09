@@ -3547,3 +3547,15 @@ package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111231-1
++ Revision: 758935
+- Update to latest upstream release
+
+* Mon Dec 26 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111222-1
++ Revision: 745298
+- texlive-libertine-legacy
+- texlive-libertine-legacy
+

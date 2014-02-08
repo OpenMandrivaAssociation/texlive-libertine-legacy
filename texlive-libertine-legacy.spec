@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-libertine-legacy
 Version:	20111231
-Release:	1
+Release:	2
 Summary:	Linux Libertine fonts for TeX and pfdTeX users
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/libertine-legacy

@@ -9,7 +9,7 @@ Version:	20111231
 Release:	11
 Summary:	Linux Libertine fonts for TeX and pfdTeX users
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/libertine-legacy
+URL:		https://www.ctan.org/tex-archive/fonts/libertine-legacy
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/libertine-legacy.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/libertine-legacy.doc.tar.xz
